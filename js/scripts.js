@@ -10,16 +10,6 @@
 })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-RVUKE5ITK77K-2");
 
 
-
-
-
-
-
-
-
-
-
-
 function validate() {
 
     var email = document.getElementsByName('email')[0].value;
