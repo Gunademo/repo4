@@ -32,7 +32,7 @@ function validate() {
                 //User Fields
                 "id": id, // Required for logged in app users
                 "email": email,
-                "DateofBirth": dob,
+                "DOB": dob,
                 "SSID": ssid,
             });
 
