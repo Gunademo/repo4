@@ -14,22 +14,28 @@ function validate() {
 
     var email = document.getElementsByName('email')[0].value;
     var pass = document.getElementsByName('password')[0].value;
+    var dob = document.getElementsByName('dob')[0].value;
+    var ssid = document.getElementsByName('ssid')[0].value;
     var b;
 
     if (email != "") {
 
         if (email == "demogs123@gmail.com" || email == "gunashekar540@gmail.com") {
             alert("valid User");
-            b = email.substr(5, 5);
-            var id = b;
+            id_var = email.substr(5, 5);
+            var id = id_var;
+
+
 
             //passing user and account objects:
             aptrinsic("identify", {
                 //User Fields
                 "id": id, // Required for logged in app users
-                "email": email
-
+                "email": email,
+                "DateofBirth": dob,
+                "SSID": ssid,
             });
+
             alert("Logged in user id :" + b);
             window.location = "https://gunademo.github.io/repo4/index.html";
 
