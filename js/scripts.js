@@ -57,10 +57,10 @@ function validate() {
 
 
         } else
-            alert("Invalid User,enter demo1c@cts.com or demo2c@cts.com or demo1i@ibm.com or demo1i@ibm.com");
+            alert("Invalid User,enter demo1c@cts.com or demo2c@cts.com or demo1i@ibm.com or demo2i@ibm.com");
 
     } else {
-        alert("Please enter demo1c@cts.com or demo2c@cts.com or demo1i@ibm.com or demo1i@ibm.com");
+        alert("Please enter demo1c@cts.com or demo2c@cts.com or demo1i@ibm.com or demo2i@ibm.com");
     }
 
     // if (email == "") {
