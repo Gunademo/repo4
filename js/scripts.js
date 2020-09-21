@@ -20,18 +20,18 @@ function validate() {
 
     if (email != "") {
 
-        if (email == "demo1@cts.com" || email == "demo2@cts.com" || email == "demo1@ibm.com" || email == "demo2@ibm.com") {
+        if (email == "demo1c@cts.com" || email == "demo2c@cts.com" || email == "demo1i@ibm.com" || email == "demo2i@ibm.com") {
             alert("valid User");
             id_var = email.split("@");
             var id = id_var[0];
 
             // Account details
-            if (email == "demo1@cts.com" || email == "demo2@cts.com") {
+            if (email == "demo1c@cts.com" || email == "demo2c@cts.com") {
                 var acc_id = "CTS";
                 var acc_name = "Cognizant Technologies Ltd";
             }
 
-            if (email == "demo1@ibm.com" || email == "demo2@ibm.com") {
+            if (email == "demo1i@ibm.com" || email == "demo2i@ibm.com") {
                 var acc_id = "IBM";
                 var acc_name = "International Business Machine";
             }
@@ -57,10 +57,10 @@ function validate() {
 
 
         } else
-            alert("Invalid User,enter demo1@cts.com or demo2@cts.com or demo1@ibm.com or demo1@ibm.com");
+            alert("Invalid User,enter demo1c@cts.com or demo2c@cts.com or demo1i@ibm.com or demo1i@ibm.com");
 
     } else {
-        alert("Please enter demo1@cts.com or demo2@cts.com or demo1@ibm.com or demo1@ibm.com");
+        alert("Please enter demo1c@cts.com or demo2c@cts.com or demo1i@ibm.com or demo1i@ibm.com");
     }
 
     // if (email == "") {
