@@ -20,10 +20,21 @@ function validate() {
 
     if (email != "") {
 
-        if (email == "demogs123@gmail.com" || email == "gunashekar540@gmail.com") {
+        if (email == "demo1@cts.com" || email == "demo2@cts.com" || email == "demo1@ibm.com" || email == "demo2@ibm.com") {
             alert("valid User");
-            id_var = email.substr(5, 5);
-            var id = id_var;
+            id_var = email.split("@");
+            var id = id_var[0];
+
+            // Account details
+            if (email == "demo1@cts.com" || email == "demo2@cts.com") {
+                var acc_id = "CTS";
+                var acc_name = "Cognizant Technologies Ltd";
+            }
+
+            if (email == "demo1@ibm.com" || email == "demo2@ibm.com") {
+                var acc_id = "IBM";
+                var acc_name = "International Business Machine";
+            }
 
 
 
@@ -34,14 +45,19 @@ function validate() {
                 "email": email,
                 "DOB": dob,
                 "SSID": ssid,
+            }, {
+                //Account Fields
+
+                "id": acc_id, //Required
+                "name": acc_name,
             });
 
-            alert("Logged in user id :" + b);
+            alert("Logged in user id :" + id + "  from  " + id_var[1]);
             window.location = "https://gunademo.github.io/repo4/index.html";
 
 
         } else
-            alert("Invalid User,enter \"demogs123@gmail.com\"");
+            alert("Invalid User,enter demo1@cts.com or demo2@cts.com or demo1@ibm.com or demo1@ibm.com");
 
     } else {
         alert("Please enter demogs123@gmail.com");
