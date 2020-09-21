@@ -60,7 +60,7 @@ function validate() {
             alert("Invalid User,enter demo1@cts.com or demo2@cts.com or demo1@ibm.com or demo1@ibm.com");
 
     } else {
-        alert("Please enter demogs123@gmail.com");
+        alert("Please enter demo1@cts.com or demo2@cts.com or demo1@ibm.com or demo1@ibm.com");
     }
 
     // if (email == "") {
