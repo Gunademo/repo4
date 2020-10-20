@@ -76,6 +76,6 @@ function validate() {
 }
 
 function newFeatureCustomevent(){
- aptrinsic('track', 'NewFeatureButton', {"name":"NewFeature","Category":"Onboarding","Length" :5000 ,"Launched" : true }); 
+ aptrinsic('track', 'NewFeatureButton', {"Launched" : true }); 
    
 }
