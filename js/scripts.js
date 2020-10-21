@@ -29,11 +29,13 @@ function validate() {
             if (email == "demo1c@cts.com" || email == "demo2c@cts.com") {
                 var acc_id = "CTS";
                 var acc_name = "Cognizant Technologies Ltd";
+                var time_zone = "CET"
             }
 
             if (email == "demo1i@ibm.com" || email == "demo2i@ibm.com") {
                 var acc_id = "IBM";
                 var acc_name = "International Business Machine";
+                var time_zone = "IST"
             }
 
 
@@ -50,6 +52,7 @@ function validate() {
 
                 "id": acc_id, //Required
                 "name": acc_name,
+                "timeZone": time_zone,
             });
 
             alert("Logged in user id :" + id + "  from  " + id_var[1]);
