@@ -84,5 +84,5 @@ function newFeatureCustomevent(){
 }
 
 function resetSession(){
-    window.aptrinsic('reset');
+    window.aptrinsic("reset");
 }
