@@ -82,3 +82,7 @@ function newFeatureCustomevent(){
  aptrinsic('track', 'NewFeatureButton', {"Launched" : true }); 
    
 }
+
+function resetSession(){
+    window.aptrinsic('reset');
+}
