@@ -86,3 +86,7 @@ function newFeatureCustomevent(){
 function resetSession(){
     window.aptrinsic("reset");
 }
+
+function globalContext(){
+    aptrinsic('set', 'globalContext', {"version":555, "name":"NXT"});
+}
