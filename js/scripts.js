@@ -47,12 +47,14 @@ function validate() {
                 "email": email,
                 "DOB": dob,
                 "SSID": ssid,
+                "IsUserActive": True,
+                "IsSmallTrue": true
             }, {
                 //Account Fields
 
                 "id": acc_id, //Required
                 "name": acc_name,
-                "timeZone": time_zone,
+                "timeZone": time_zone
             });
 
             alert("Logged in user id :" + id + "  from  " + id_var[1]);
