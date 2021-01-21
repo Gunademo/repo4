@@ -47,7 +47,7 @@ function validate() {
                 "email": email,
                 "DOB": dob,
                 "SSID": ssid,
-                "IsUserActive": 'true',
+                "IsUserActive": 'false',
                 "IsSmallTrue": 'true'
             }, {
                 //Account Fields
