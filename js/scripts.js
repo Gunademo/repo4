@@ -20,7 +20,7 @@ function validate() {
 
     if (email != "") {
 
-        if (email == "demo1c@cts.com" || email == "demo2c@cts.com" || email == "demo1i@ibm.com" || email == "demo2i@ibm.com") {
+        if (email == "demo1c@cts.com" || email == "demo2c@cts.com" || email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com" || email == "gvudarapu@gainsight.com") {
             alert("valid User");
             id_var = email.split("@");
             var id = id_var[0];
