@@ -17,6 +17,7 @@ function validate() {
     var dob = document.getElementsByName('dob')[0].value;
     var ssid = document.getElementsByName('ssid')[0].value;
     var b;
+//     var datee=null;
 
     if (email != "") {
 
@@ -48,7 +49,7 @@ function validate() {
                 "DOB": dob,
                 "SSID": ssid,
                 "IsUserActive": 'false',
-                "IsSmallTrue": 'true'
+                "IsSmallTrue": 'true',
                 "Nulldate": null,
                 "NullNumber": null,
                 "NullString": null
