@@ -49,6 +49,10 @@ function validate() {
                 "SSID": ssid,
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true'
+                "Nullboolean": null,
+                "Nulldate": null,
+                "NullNumber": null,
+                "NullString": null
             }, {
                 //Account Fields
 
