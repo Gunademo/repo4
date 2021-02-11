@@ -30,7 +30,7 @@ function validate() {
             if (email == "demo1c@cts.com" || email == "demo2c@cts.com") {
                 var acc_id = "CTS";
                 var acc_name = "Cognizant Technologies Ltd";
-                var time_zone = "CET"
+                var time_zone = null
             }
 
             if (email == "demo1i@ibm.com" || email == "demo2i@ibm.com") {
