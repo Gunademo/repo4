@@ -46,7 +46,7 @@ function validate() {
                 //User Fields
                 "id": id, // Required for logged in app users
                 "email": email,
-                "DOB": null,
+                "DOB": dob,
                 "SSID": ssid,
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
