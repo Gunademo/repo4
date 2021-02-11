@@ -50,7 +50,7 @@ function validate() {
                 "SSID": ssid,
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
-                "Nulldate": null,
+                "Nulldate": 12-04-1994,
                 "NullNumber": null,
                 "NullString": null
             }, {
