@@ -36,6 +36,90 @@
 
         <article class="main">
             <p>This is the new feature added to the Website</p>
+            
+            
+            <div class="help-menu" ng-show="isOpen" on-close="showHelpMenu(false)" is-open="isHelpOpen" style="">
+ <header class="help-menu__header">
+ <h2 class="help-menu__heading">Help resources</h2>
+ <button class="btn btn--secondary btn--icon" ng-click="vm.close()"><span class="btn__icon">close</span></button>
+ </header>
+ <div>
+ <!---->
+ <!---->
+
+ <div class="help-menu__section">
+ <ul class="help-menu__list">
+ <!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }" style="">
+ <a class="_flex--between--center _text-decoration--none" href="https://help.roller.software"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">help</span>
+ <p class="_flex--column flush">
+ <span class="flush">Go to help center</span>
+ <span class="text--tiny text--secondary">Search help articles</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="" ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);">
+ <div class="_flex--start">
+ <span class="icon resource-icon">customer_support</span>
+ <p class="_flex--column flush">
+ <span class="flush">Submit a support request</span>
+ <span class="text--tiny text--secondary">Contact us and connect with a customer success manager</span>
+ </p>
+ </div>
+ <!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="https://roller.software/products/blog"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">fiber_new</span>
+ <p class="_flex--column flush">
+ <span class="flush">What’s new</span>
+ <span class="text--tiny text--secondary">Check out ROLLER's latest new features & updates</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="https://changelog.roller.app"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">changelog</span>
+ <p class="_flex--column flush">
+ <span class="flush">Change log</span>
+ <span class="text--tiny text--secondary">A record of release updates and new features</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="http://status.roller.app"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">pulse</span>
+ <p class="_flex--column flush">
+ <span class="flush">Platform status</span>
+ <span class="text--tiny text--secondary">Realtime performance status of ROLLER apps</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="#/product-roadmap" ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);">
+ <div class="_flex--start">
+ <span class="icon resource-icon">location_on</span>
+ <p class="_flex--column flush">
+ <span class="flush">ROLLER roadmap</span>
+ <span class="text--tiny text--secondary">Review our roadmap & suggest your ideas</span>
+ </p>
+ </div>
+ <!---->
+ </a>
+ </li><!---->
+ </ul>
+ </div>
+ </div>
+</div>
 
         </article>
 
