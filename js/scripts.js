@@ -33,9 +33,9 @@ function validate() {
                 var time_zone = null
             }
 
-            if (email == "demo1i@ibm.com" || email == "demo2i@ibm.com") {
-                var acc_id = "IBM";
-                var acc_name = "International Business Machine";
+            if (email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com") {
+                var acc_id = "ibm";
+                var acc_name = "International Machine";
                 var time_zone = "IST"
             }
 
