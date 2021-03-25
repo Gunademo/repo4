@@ -28,7 +28,7 @@ function validate() {
 
             // Account details
             if (email == "demo1c@cts.com" || email == "demo2c@cts.com") {
-                var acc_id = "CTS";
+                var acc_id = "Cognizant Technology Solutions";
                 var acc_name = "Cognizant Technologies Ltd";
                 var time_zone = null
             }
