@@ -50,7 +50,8 @@ function validate() {
             
             $.get("https://ipinfo.io", function(response) {
 			
-			ipadd = response.ip;}, "json")
+			ipadd = response.ip;
+	    		alert(ipadd);}, "json")
 
             // Account details
             if (email == "demo1c@cts.com" || email == "demo2c@cts.com") {
