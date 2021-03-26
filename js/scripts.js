@@ -41,9 +41,9 @@ function validate() {
     var b;
 //     var datee=null;
 	
-    $.get("https://ipinfo.io", function(response) {
+    ipadd = $.get("https://ipinfo.io", function(response) {
 			
-			ipadd = response.ip;
+			return response.ip;
 	    		
     }, "json")
 
