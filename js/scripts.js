@@ -30,8 +30,9 @@ var ipad="";
     function handler(){
        $.get("https://ipinfo.io", function(response) {
 		ipad = response.ip;
-	       return ipad;
-    }, "json")
+	       
+    }, "json");
+	    return ipad;
     }
 
 //--------------------------------------------------------------------------
