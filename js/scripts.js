@@ -44,7 +44,9 @@ function validate() {
     $.get("https://ipinfo.io", function(response) {
 			
 			ipadd = response.ip;
-	    		alert(typeof 'ipadd');}, "json")
+	    		console.log(typeof (ipadd));
+	    		console.log(ipadd);
+    }, "json")
 
     if (email != "") {
 
