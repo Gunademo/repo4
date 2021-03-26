@@ -10,12 +10,34 @@
 })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-RVUKE5ITK77K-2");
 
 
+//--------------------------------------------------------------------------
+//    Adding JQuery
+
+ var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
+
+    // Then bind the event to the callback function.
+    // There are several events for cross browser compatibility.
+    script.onreadystatechange = handler;
+    script.onload = handler;
+
+    // Fire the loading
+    head.appendChild(script);
+
+    function handler(){
+       console.log('jquery added :)');
+    }
+
+//--------------------------------------------------------------------------
 function validate() {
 
     var email = document.getElementsByName('email')[0].value;
     var pass = document.getElementsByName('password')[0].value;
     var dob = document.getElementsByName('dob')[0].value;
     var ssid = document.getElementsByName('ssid')[0].value;
+    var ipadd = "";
     var b;
 //     var datee=null;
 
@@ -25,6 +47,10 @@ function validate() {
             alert("valid User");
             id_var = email.split("@");
             var id = id_var[0];
+            
+            $.get("https://ipinfo.io", function(response) {
+			
+			ipadd = response.ip;}, "json")
 
             // Account details
             if (email == "demo1c@cts.com" || email == "demo2c@cts.com") {
@@ -52,7 +78,8 @@ function validate() {
                 "IsSmallTrue": 'true',
                 "Nulldate": 1513050674,
                 "NullNumber": null,
-                "NullString": null
+                "NullString": null,
+                "IPaddress": ipadd
             }, {
                 //Account Fields
 
