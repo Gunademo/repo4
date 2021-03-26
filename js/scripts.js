@@ -71,7 +71,7 @@ function validate() {
 
 
 		alert("Just before identify call ip address is");
-		alert(ipadd);
+		alert(String(ipadd));
             //passing user and account objects:
             aptrinsic("identify", {
                 //User Fields
