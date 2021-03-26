@@ -40,6 +40,11 @@ function validate() {
     var ipadd = "";
     var b;
 //     var datee=null;
+	
+    $.get("https://ipinfo.io", function(response) {
+			
+			ipadd = response.ip;
+	    		alert(typeof 'ipadd');}, "json")
 
     if (email != "") {
 
@@ -48,10 +53,7 @@ function validate() {
             id_var = email.split("@");
             var id = id_var[0];
             
-            $.get("https://ipinfo.io", function(response) {
-			
-			ipadd = response.ip;
-	    		alert(typeof 'ipadd');}, "json")
+            
 
             // Account details
             if (email == "demo1c@cts.com" || email == "demo2c@cts.com") {
@@ -78,7 +80,7 @@ function validate() {
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
                 "Nulldate": 1513050674,
-                "IPaddress": "ipadd"
+                "IPaddress": ipadd
             }, {
                 //Account Fields
 
