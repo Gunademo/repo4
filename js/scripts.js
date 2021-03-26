@@ -78,9 +78,7 @@ function validate() {
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
                 "Nulldate": 1513050674,
-                "NullNumber": null,
-                "NullString": null,
-                "IPaddress": String(ipadd)
+                "IPaddress": ipadd
             }, {
                 //Account Fields
 
