@@ -44,8 +44,7 @@ function validate() {
     $.get("https://ipinfo.io", function(response) {
 			
 			ipadd = response.ip;
-	    		console.log(typeof (ipadd));
-	    		console.log(ipadd);
+	    		
     }, "json")
 
     if (email != "") {
@@ -71,7 +70,8 @@ function validate() {
             }
 
 
-
+		alert("Just before identify call ip address is");
+		alert(ipadd);
             //passing user and account objects:
             aptrinsic("identify", {
                 //User Fields
@@ -81,7 +81,6 @@ function validate() {
                 "SSID": ssid,
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
-                "Nulldate": 1513050674,
                 "IPaddress": ipadd
             }, {
                 //Account Fields
