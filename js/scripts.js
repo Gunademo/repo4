@@ -77,7 +77,7 @@ function validate() {
 		alert("Just before identify call ip address is");
 		alert(String(ipadd));
 		
-		var obj = { name: "John", age: 30, city: "New York" };
+		var obj = { name: "John", age: 30, city: "New York", human: true };
 		var myJSON = JSON.stringify(obj);
 
             //passing user and account objects:
