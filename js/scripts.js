@@ -76,13 +76,16 @@ function validate() {
 
 		alert("Just before identify call ip address is");
 		alert(String(ipadd));
+		
+		var obj = { name: "John", age: 30, city: "New York" };
+
             //passing user and account objects:
             aptrinsic("identify", {
                 //User Fields
                 "id": id, // Required for logged in app users
                 "email": email,
                 "DOB": dob,
-                "SSID": ssid,
+                "SSID": obj,
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
                 "IPaddress": ipadd
