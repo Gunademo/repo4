@@ -85,7 +85,7 @@ function validate() {
                 "id": id, // Required for logged in app users
                 "email": email,
                 "DOB": dob,
-                "SSID": obj,
+                "SSID": JSON.stringify(obj),
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
                 "IPaddress": ipadd
