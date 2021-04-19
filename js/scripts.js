@@ -78,6 +78,7 @@ function validate() {
 		alert(String(ipadd));
 		
 		var obj = { name: "John", age: 30, city: "New York" };
+		var myJSON = JSON.stringify(obj);
 
             //passing user and account objects:
             aptrinsic("identify", {
@@ -85,7 +86,7 @@ function validate() {
                 "id": id, // Required for logged in app users
                 "email": email,
                 "DOB": dob,
-                "SSID": JSON.stringify(obj),
+                "SSID": myJSON,
                 "IsUserActive": 'false',
                 "IsSmallTrue": 'true',
                 "IPaddress": ipadd
