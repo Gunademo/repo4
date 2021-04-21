@@ -53,7 +53,7 @@ function validate() {
 
     if (email != "") {
 
-        if (email == "demo1c@cts.com" || email == "demo2c@cts.com" || email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com" || email == "gvudarapu@gainsight.com" || email == "demotest@test.com" || email == "gunashekar540@gmail.com" || email == "vudarapugunashekar@gmail.com") {
+        if (email == "demo1c@cts.com" || email == "demo2c@cts.com" || email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com" || email == "gvudarapu@gainsight.com" || email == "demotest@test.com" || email == "gunashekar540@gmail.com" || email == "vudarapugunashekar@gmail.com" || email == "user1" || email == "user2") {
             alert("valid User");
             id_var = email.split("@");
             var id = id_var[0];
@@ -79,12 +79,37 @@ function validate() {
 		
 		var obj = { name: "John", age: 30, city: "New York", human: true };
 		var myJSON = JSON.stringify(obj);
+		var fName;
+		var lName;
+		
+		
+		if (email == "user1") {
+			email = "user@pxmail.com";
+			id = "user1";
+			fName = "user1";
+			lName = "user1";
+			acc_id = "user1AccId";
+			acc_name = "user1AccName";
+			
+		}
+		
+		if (email == "user2") {
+			email = "user@pxmail.com";
+			id = "user2";
+			fName = "user2";
+			lName = "user2";
+			acc_id = "user2Acc";
+			acc_name = "user2AccName";
+			
+		}
 
             //passing user and account objects:
             aptrinsic("identify", {
                 //User Fields
                 "id": id, // Required for logged in app users
                 "email": email,
+		 "firstName": fName,
+		 "lastName": lName,
                 "DOB": dob,
                 "SSID": myJSON,
                 "IsUserActive": 'false',
