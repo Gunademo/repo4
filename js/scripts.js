@@ -53,7 +53,7 @@ function validate() {
 
     if (email != "") {
 
-        if (email == "demo1c@cts.com" || email == "demo2c@cts.com" || email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com" || email == "gvudarapu@gainsight.com" || email == "demotest@test.com" || email == "gunashekar540@gmail.com" || email == "vudarapugunashekar@gmail.com" || email == "user1" || email == "user2") {
+        if (email == "demo1c@cts.com" || email == "demo2c@cts.com" || email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com" || email == "gvudarapu@gainsight.com" || email == "demotest@test.com" || email == "gunashekar540@gmail.com" || email == "vudarapugunashekar@gmail.com" || email == "test123456@test.com" || email == "user2") {
             alert("valid User");
             id_var = email.split("@");
             var id = id_var[0];
@@ -67,7 +67,7 @@ function validate() {
                 var time_zone = "CET"
             }
 
-            if (email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com") {
+            if (email == "demo1i@ibm.com" || email == "demo2i@ibm.com" || email == "gunademo11@gmail.com" || email == "test123456@test.com") {
                 var acc_id = "ibm";
                 var acc_name = "International Machine";
                 var time_zone = "IST"
@@ -83,9 +83,9 @@ function validate() {
 		var lName;
 		
 		
-		if (email == "user1") {
-			email = "user@pxmail.com";
-			id = "user1";
+		if (email == "user1" || email == "test123456@test.com") {
+			email = "test123456@test.com";
+			id = "test123456";
 			fName = "user1";
 			lName = "user1";
 			acc_id = "user1AccId";
