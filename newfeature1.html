@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=here, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1><a class="link-title" href="index.html">GS Website</a></h1>
+        </header>
+
+        <nav class="menu">
+            <a href="index.html" id="index">Home</a> &nbsp;&nbsp;&nbsp;
+            <a href="about.html" id="about">About us</a> &nbsp;&nbsp;&nbsp;
+            <a href="contact.html" id="contact">Contact</a> &nbsp;&nbsp;&nbsp;
+            <a href="newfeature.html" id="feature">New Feature</a> &nbsp;&nbsp;&nbsp;
+            <a href="newfeature1.html" id="feature">New Feature</a> &nbsp;&nbsp;&nbsp;
+            <a href="mappingtypes.html" id="mapping">Mapping types</a> &nbsp;&nbsp;&nbsp;
+            <a href="login.html" id="logout" onclick="resetSession()">Logout</a>
+        </nav>
+        
+        <!-- Adding Script here instead of in head tag to check the inconsistent behaviour-->
+        <script src="js/scripts.js"></script>
+
+        <aside>
+            <h1>Side Bar</h1>
+        </aside>
+        
+        <article class="main1">
+            <button id="btn-custom-events" onclick="newFeatureCustomevent()">Custom Event tracking</button>
+
+        </article>
+
+        <article class="main">
+            <p>This is the new feature added to the Website</p>
+            
+            
+            <div class="help-menu" ng-show="isOpen" on-close="showHelpMenu(false)" is-open="isHelpOpen" style="">
+ <header class="help-menu__header">
+ <h2 class="help-menu__heading">Help resources</h2>
+ <button class="btn btn--secondary btn--icon" ng-click="vm.close()"><span class="btn__icon">close</span></button>
+ </header>
+ <div>
+ <!---->
+ <!---->
+
+ <div class="help-menu__section">
+ <ul class="help-menu__list">
+ <!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }" style="">
+ <a class="_flex--between--center _text-decoration--none" href="https://help.roller.software"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">help</span>
+ <p class="_flex--column flush">
+ <span class="flush">Go to help center</span>
+ <span class="text--tiny text--secondary">Search help articles</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="" ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);">
+ <div class="_flex--start">
+ <span class="icon resource-icon">customer_support</span>
+ <p class="_flex--column flush">
+ <span class="flush">Submit a support request</span>
+ <span class="text--tiny text--secondary">Contact us and connect with a customer success manager</span>
+ </p>
+ </div>
+ <!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="https://roller.software/products/blog"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">fiber_new</span>
+ <p class="_flex--column flush">
+ <span class="flush">What’s new</span>
+ <span class="text--tiny text--secondary">Check out ROLLER's latest new features & updates</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="https://changelog.roller.app"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">changelog</span>
+ <p class="_flex--column flush">
+ <span class="flush">Change log</span>
+ <span class="text--tiny text--secondary">A record of release updates and new features</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="http://status.roller.app"; ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);" target="_blank">
+ <div class="_flex--start">
+ <span class="icon resource-icon">pulse</span>
+ <p class="_flex--column flush">
+ <span class="flush">Platform status</span>
+ <span class="text--tiny text--secondary">Realtime performance status of ROLLER apps</span>
+ </p>
+ </div>
+ <!----><span class="icon text--secondary md-18 push-half--left" ng-if="resource.isExternal">launch</span><!---->
+ </a>
+ </li><!----><li class="help-menu__list-item" ng-repeat="resource in vm.globalResources | filter: (vm.articleSuggestions.length || '') && { hideWhenArticles: false }">
+ <a class="_flex--between--center _text-decoration--none" href="#/product-roadmap" ng-attr-target="{{resource.isExternal ? '_blank' : undefined}}" ng-click="resource.click($event);">
+ <div class="_flex--start">
+ <span class="icon resource-icon">location_on</span>
+ <p class="_flex--column flush">
+ <span class="flush">ROLLER roadmap</span>
+ <span class="text--tiny text--secondary">Review our roadmap & suggest your ideas</span>
+ </p>
+ </div>
+ <!---->
+ </a>
+ </li><!---->
+ </ul>
+ </div>
+ </div>
+</div>
+
+        </article>
+
+        <footer>
+
+            &copy; 2020 GS Website &nbsp; <span class="separator">|</span> &nbsp; Designed by <a href="https://theelectronicline.wordpress.com">GS Technologies</a>
+        </footer>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
